@@ -22,3 +22,30 @@ function convertToUrl(string, target, replacement) {
 }
 
 console.log(convertToUrl(newStr, " ", "%20"))
+
+function convertToUrl(string, target, replacement) {
+    for ( i = 0; i < string.length; i++) {
+        string = string.replace(target, replacement)
+    }
+    return string
+}
+
+console.log(convertToUrl(newStr, " ", "%20"))
+
+function convertToUrl(string, target, replacement) {
+    for (i = 0; i < string.length; i++) {
+        string = string.replace(target, replacement)
+    }
+    return string
+}
+
+console.log(convertToUrl(newStr, " ", "%20"))
+
+function convertToUrl(string, target, replacement) {
+    for ( i = 0; i < string.length; i++ ) {
+        string = string.replace(target, replacement)
+    }
+    return string
+}
+
+console.log(convertToUrl(newStr, " ", "%20"))
