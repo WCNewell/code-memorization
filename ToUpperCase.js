@@ -51,3 +51,10 @@ function upperCase(string) {
 }
 
 console.log(upperCase(stringOne))
+
+function upperCase(string) {
+    const upperString = string.toUpperCase()
+    return `${upperSTring}`
+}
+
+console.log(upperCase(stringOne))
