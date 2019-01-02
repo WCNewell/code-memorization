@@ -6,11 +6,11 @@ let integers = [1, 5, -12, -2, 12]
 
 // Result should be 24
 
-const highestInterval = integers => {
+var highestInterval = integers => {
     let highestInt = null
     for ( x=0; x < integers.length; x++ ) {
         for ( y=0; y < integers.length; y++ ) {
-            if (integers[x] < integers[y] && highestIng < (integers[y] - integers[x])) {
+            if (integers[x] < integers[y] && highestInt < (integers[y] - integers[x])) {
                 highestInt = integers[y] - integers[x]
             }
         }
@@ -20,7 +20,7 @@ const highestInterval = integers => {
 
 console.log(highestInterval(integers))
 
-const highestInterval = integers => {
+var highestInterval = integers => {
     let highestInt = null
     for ( x = 0; x < integers.length; x++) {
         for (y = 0; y < integers.length; y++) {
@@ -34,3 +34,30 @@ const highestInterval = integers => {
 
 console.log(highestInterval(integers))
 
+var highestInterval = integers => {
+    let highestInt = null
+    for ( x=0; x < integers.length; x++) {
+        for ( y=0; y < integers.length; y++) {
+            if (integers[x] < integers[y] && highestInt < (integers[y] - integers[x])) {
+                highestInt = integers[y] - integers[x]
+            }
+        }
+    }
+    return highestInt === null ? -1 : highestInt
+}
+
+console.log(highestInterval(integers))
+
+var highestInterval = integers => {
+    let highestInt = null
+    for ( x=0; x < integers.length; x++ ) {
+        for ( y=0; y < integers.length; y++ ) {
+            if (integers[x] < integers[y] && highestInt < (integers[y] - integers[x])) {
+                highestInt = integers[y] - integers[x]
+            }
+        }
+    }
+    return highestInt === null ? -1 : highestInt
+}
+
+console.log(highestInterval(integers))
