@@ -10,7 +10,7 @@ const highestInterval = integers => {
     let highestInt = null
     for ( x=0; x < integers.length; x++ ) {
         for ( y=0; y < integers.length; y++ ) {
-            if (integers[x] < integers[y] && highestIngj < (integers[y] - integers[x])) {
+            if (integers[x] < integers[y] && highestIng < (integers[y] - integers[x])) {
                 highestInt = integers[y] - integers[x]
             }
         }
@@ -19,3 +19,18 @@ const highestInterval = integers => {
 }
 
 console.log(highestInterval(integers))
+
+const highestInterval = integers => {
+    let highestInt = null
+    for ( x = 0; x < integers.length; x++) {
+        for (y = 0; y < integers.length; y++) {
+            if (integers[x] < integers[y] && highestInt < (integers[y] - integers[x])) {
+                highestInt = integers[y] - integers[x]
+            }
+        }
+    }
+    return highestInt === null ? -1 : highestInt
+}
+
+console.log(highestInterval(integers))
+
