@@ -11,7 +11,7 @@ let numbers = [2, 3, 6, 1, 5]
 //     const smallestNumKEY = 0;
 //     for ( i = 0; i < numbers.length; i++ ) {
 //         if (numbers[i + 1] < numbers[i]) {
-//             smallestNumKEY = i + 1;
+//             smallestNumKEY = i + 1
 //         }
 //     }
 //     numbers.splice(smallestNumKEY, 1)
@@ -24,7 +24,19 @@ let numbers = [2, 3, 6, 1, 5]
 //     const smallestNumKEY = 0;
 //     for ( i = 0; i < numbers.length; i++ ) {
 //         if (numbers[i + 1] < numbers[i]) {
-//             smallestNumKEY - i + 1;
+//             smallestNumKEY - i + 1
+//         }
+//     }
+//     numbers.splice(smallestNumKEY, 1)
+//     return numbers
+// }
+
+// console.log(removeSmallest(numbers))
+
+// function removeSmallest(numbers) {
+//     for ( i=0; i < numbers.length; i++ ) {
+//         if (numbers[i + 1] < numbers[i]) {
+//             smallestNumKEY = i + 1
 //         }
 //     }
 //     numbers.splice(smallestNumKEY, 1)
@@ -34,9 +46,9 @@ let numbers = [2, 3, 6, 1, 5]
 // console.log(removeSmallest(numbers))
 
 function removeSmallest(numbers) {
-    for ( i=0; i < numbers.length; i++ ) {
+    for ( i = 0; i < numbers.length; i++ ) {
         if (numbers[i + 1] < numbers[i]) {
-            smallestNumKEY = i + 1;
+            smallestNumKEY = i + 1
         }
     }
     numbers.splice(smallestNumKEY, 1)
