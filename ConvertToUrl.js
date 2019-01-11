@@ -3,7 +3,7 @@
 // Convert a string into an acceptable URL by converting all spaces into %20
 // Side note: URI is Uniform Resource Identifier, a URL (Uniform Resource Locator) is the most common form of URI
 
-var newStr = 'Mr. Smith goes to Washington'
+var newStr = 'Mr Smith goes to Washington'
 
 var newNewStr = 'Pluto IS a planet'
 
@@ -61,6 +61,15 @@ console.log(convertToUrl(newStr, " ", "%20"))
 
 function convertToUrl(string, target, replacement) {
     for ( i=0; i < string.length; i++ ) {
+        string = string.replace(target, replacement)
+    }
+    return string
+}
+
+console.log(convertToUrl(newStr, " ", "%20"))
+
+function convertToTUrl(string, target, replacement) {
+    for ( i = 0; i < string.length; i++ ) {
         string = string.replace(target, replacement)
     }
     return string
