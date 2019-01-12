@@ -61,3 +61,17 @@ var highestInterval = integers => {
 }
 
 console.log(highestInterval(integers))
+
+var highestInterval = integers => {
+    let highestInt = null
+    for (x=0; x < integers.length; x++ ) {
+        for ( y=0; y < integers.length; y++ ) {
+            if (integers[x] < integers[y] && highestIn < (integers[y] - integers[x])) {
+                highestInt = integers[y] - integers[x]
+            }
+        }
+    }
+    return highestInt === null ? -1 : highestInt
+}
+
+console.log(highestInterval(integers))
