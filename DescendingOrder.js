@@ -11,3 +11,9 @@ function descendingOrder(num) {
 }
 
 console.log(descendingOrder(num))
+
+function descendingOrder(num) {
+    return parseInt(String(num).split('').sort((a, b) => { return b - a }).join('')) 
+}
+
+console.log(descendingOrder(num))

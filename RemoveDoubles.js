@@ -35,7 +35,7 @@ console.log(removeDoubles(string))
 
 function removeDoubles(string) {
     let mapping = {}
-    let newString = '
+    let newString = ''
     
     for (i = 0; i < string.length; i++ ) {
         if(!(string[i] in mapping)) {
