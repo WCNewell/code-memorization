@@ -87,10 +87,19 @@ function convertToTUrl(string, target, replacement) {
 console.log(convertToUrl(newStr, " ", "%20"))
 
 function convertToUrl(string, target, replacement) {
-    for (i = 0; i < string.lenth; i++ ) {
+    for (i = 0; i < string.length; i++ ) {
         string = string.replace(target, replacement)
     }
     return string
 }
 
 console.log(convertToUrl(newStr, " ", "%20"))
+
+function convertToTUrl(string, target, replacement) {
+    for (i = 0; i < string.length; i++ ) {
+        string = string.replace(target, replacement)
+    }
+    return string
+}
+
+console.log(convertToTUrl(newStr, " ", "%20"))
