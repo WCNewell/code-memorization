@@ -79,3 +79,11 @@ function upperCase(string) {
 }
 
 console.log(upperCase(stringOne))
+
+function upperCase(string) {
+    const upperString = string.toUpperCase()
+    return `${upperString}`
+}
+
+console.log(upperCase(stringOne))
+

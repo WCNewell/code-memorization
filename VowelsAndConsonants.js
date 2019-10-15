@@ -4,34 +4,73 @@
 
 let string = 'javascriptloops'
 
-function vowelsAndConsonants(s) {
+// function vowelsAndConsonants(string) {
+//     let vowels = 'aeiou'
+//     let consonants = ''
+
+//     for (i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             console.log(string[i])
+//         } else {
+//             consonants += string[i] + '\n'
+//         }
+//     }
+//     console.log(consonants)
+// }
+
+// console.log(vowelsAndConsonants(string))
+
+// function vowelsAndConsonants(s) {
+//     let vowels = 'aeiou'
+//     let consonants = ''
+
+//     for (i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             console.log(string[i])
+//         } else {
+//             consonants += string[i] + '\n'
+//         }
+//     }
+//     console.log(consonants)
+// }
+
+// console.log(vowelsAndConsonants(string))
+
+// function vowelsAndConsonants(string) {
+//     let vowels = 'aeiou'
+//     let consonants = ''
+
+//     for (i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             console.log(string[i])
+//         } else {
+//             consonants += string[i]
+//         }
+//         console.log()
+//     }
+// }
+
+// console.log(vowelsAndConsonants(string))
+
+// ^^ The above is not quite working here is another solution:
+
+function vowelsAndConsonants(string) {
     let vowels = 'aeiou'
     let consonants = ''
 
-    for (i = 0; i < s.length; i++) {
-        if (vowels.includes(s[i])) {
-            console.log(s[i])
+    for (i = 0; i < string.length; i++) {
+
+            if (vowels.includes(string[i])) {
+            console.log(string[i])
+
         } else {
-            consonants += s[i] + '\n'
+            consonants += string[i]
         }
+
     }
-    console.log(consonants)
+
+    console.log(consonants.trim())
 }
 
 console.log(vowelsAndConsonants(string))
 
-function vowelsAndConsonants(s) {
-    let vowels = 'aeiou'
-    let consonants = ''
-
-    for (i = 0; i < s.length; i++) {
-        if (vowels.includes(s[i])) {
-            console.log(s[i])
-        } else {
-            consonants += s[i] + '\n'
-        }
-    }
-    console.log(consonants)
-}
-
-console.log(vowelsAndConsonants(string))
