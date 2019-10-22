@@ -129,3 +129,4 @@ function removeSmallest(numbers) {
 
 console.log(removeSmallest(numbers))
 
+ 
