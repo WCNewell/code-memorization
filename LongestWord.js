@@ -4,23 +4,17 @@
 // let str ="Bobbicat is super cute"
 
 function findLongestWord(str) {
-  var strSplit = str.split(' ');
-  var longestWord = 0;
-  for(var i = 0; i < strSplit.length; i++){
-    if(strSplit[i].length > longestWord){
-	longestWord = strSplit[i].length;
-     }
-  }
+  const stringArray = str.split(" ");
+  const longestWord = stringArray.reduce((a, b) => {
+    if(b.length > a.length) {
+      return b;
+    } else {
+      return a;
+    }
+  });
   return longestWord;
 }
 
-findLongestWord("Bobbicat is super cute")
+console.log(findLongestWord("Bobbicat is super cute"))
 
-// or 
 
-function findLongestWord(str) {
-  var longestWord = str.split(' ').sort(function(a, b) { return b.length - a.length; });
-  return longestWord[0].length;
-}
-
-console.log(findLongestWord(str))
