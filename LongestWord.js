@@ -1,7 +1,7 @@
 // LongestWord
 // Find the longest word in a string
 
-// let str ="Bobbicat is super cute"
+let str ="Bobbicat is super cute"
 
 function findLongestWord(str) {
   const stringArray = str.split(" ");
@@ -15,6 +15,6 @@ function findLongestWord(str) {
   return longestWord;
 }
 
-console.log(findLongestWord("Bobbicat is super cute"))
+console.log(findLongestWord(str))
 
 
